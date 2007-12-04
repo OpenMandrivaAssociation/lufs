@@ -20,7 +20,7 @@
 %define release %{_release}plf
 %global with_gnetfs 1
 %else
-%define release %{_release}mdk
+%define release  %mkrel %{_release}
 %endif
 
 # provide debug option for developers
