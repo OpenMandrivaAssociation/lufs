@@ -43,7 +43,7 @@ BuildRequires:	automake1.9
 # for sshfs detection
 BuildRequires:	openssh-clients
 Requires:	%{libname} = %{version}-%{release}
-PreReq:		rpm-helper
+Requires(post,preun):	rpm-helper
 %define _requires_exceptions devel(
 
 %description
