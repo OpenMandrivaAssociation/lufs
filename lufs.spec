@@ -152,8 +152,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*ssh*.so.*
 %{_libdir}/*ssh*.so
 
+%if %mdkversion < 200900
 %post -n %libname -p /sbin/ldconfig
+%endif
+%if %mdkversion < 200900
 %postun -n %libname -p /sbin/ldconfig
+%endif
 
 %files -n %libname-devel
 %defattr(-,root,root)
@@ -170,8 +174,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*gnetfs*.so.*
 %{_libdir}/*gnetfs*.so
 
+%if %mdkversion < 200900
 %post -n %libgnetname -p /sbin/ldconfig
+%endif
+%if %mdkversion < 200900
 %postun -n %libgnetname -p /sbin/ldconfig
+%endif
 
 %files -n %libgnetname-devel
 %defattr(-,root,root)
