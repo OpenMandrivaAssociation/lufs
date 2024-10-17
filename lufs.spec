@@ -34,7 +34,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		File tools
-URL:		http://lufs.sourceforge.net
+URL:		https://lufs.sourceforge.net
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		lufs-0.9.7_gnetfs_config.in.patch.bz2
 Patch1:		lufs-0.9.7_dont_run_ldconfig.patch.bz2
