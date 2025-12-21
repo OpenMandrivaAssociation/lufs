@@ -40,6 +40,9 @@ Patch0:		lufs-0.9.7_gnetfs_config.in.patch.bz2
 Patch1:		lufs-0.9.7_dont_run_ldconfig.patch.bz2
 Patch2:		lufs-0.9.7-no-gnome.patch.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	automake1.9
 # for sshfs detection
 BuildRequires:	openssh-clients
