@@ -17,10 +17,10 @@
 %{?_without_plf:	%{expand: %%global with_plf 0}}
 %{?_with_plf:		%{expand: %%global with_plf 1}}
 %if %with_plf
-%define release %{_release}plf
+%define release %{_release}plf.1
 %global with_gnetfs 1
 %else
-%define release  %mkrel %{_release}
+%define release %{_release}.1
 %endif
 
 # provide debug option for developers
